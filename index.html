@@ -1,0 +1,1374 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>午夜久干_午夜久干官方视频门户_午夜久干企业影像社区</title>
+<meta name="description" content="午夜久干官方网站，是面向夜间创作者与影像爱好者的原创视频品牌平台，提供高清正版作品、创作者社区、企业动态与精品内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23151a2b'/%3E%3Ccircle cx='32' cy='30' r='14' fill='none' stroke='%236fe3c1' stroke-width='4'/%3E%3Cpath d='M27 24l14 8-14 8z' fill='%23ffb45c'/%3E%3Cpath d='M14 50h36' stroke='%236fe3c1' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --midnight-page:#0f1420;
+  --midnight-panel:#151a2b;
+  --midnight-panel-2:#1c2338;
+  --midnight-line:#2a3350;
+  --midnight-ink:#e8ecf7;
+  --midnight-ink-soft:#a8b2cd;
+  --midnight-ink-dim:#78829e;
+  --midnight-mint:#6fe3c1;
+  --midnight-amber:#ffb45c;
+  --midnight-violet:#8f7bff;
+  --midnight-rose:#ff7c96;
+  --midnight-sticky:112px;
+  --midnight-radius:18px;
+  --midnight-wrap:1180px;
+  font-size:16px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:
+    radial-gradient(1200px 500px at 80% -10%, rgba(143,123,255,.20), transparent 60%),
+    radial-gradient(900px 420px at 0% 8%, rgba(111,227,193,.12), transparent 55%),
+    var(--midnight-page);
+  color:var(--midnight-ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+.mk-wrap{width:min(var(--midnight-wrap),calc(100% - 40px));margin-inline:auto;}
+.mk-section{padding:64px 0;scroll-margin-top:var(--midnight-sticky);position:relative;}
+.mk-section + .mk-section{border-top:1px solid rgba(42,51,80,.55);}
+.mk-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.18em;color:var(--midnight-mint);text-transform:uppercase;font-weight:700;}
+.mk-eyebrow::before{content:"";width:26px;height:2px;background:linear-gradient(90deg,var(--midnight-mint),transparent);}
+h1,h2,h3,h4{margin:0;line-height:1.32;font-weight:800;letter-spacing:.01em;}
+.mk-h2{font-size:clamp(1.5rem,2.6vw,2.05rem);margin:10px 0 14px;}
+.mk-h2 em{font-style:normal;color:var(--midnight-mint);}
+.mk-lead{color:var(--midnight-ink-soft);font-size:.98rem;max-width:70ch;}
+.mk-h3{font-size:1.08rem;margin:0 0 8px;}
+.mk-muted{color:var(--midnight-ink-dim);font-size:.86rem;}
+.mk-btn{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:999px;
+  font-size:.9rem;font-weight:700;border:1px solid transparent;transition:.22s ease;white-space:nowrap;
+}
+.mk-btn-primary{background:linear-gradient(120deg,var(--midnight-mint),#57c6ff);color:#08131a;}
+.mk-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px -12px rgba(111,227,193,.75);}
+.mk-btn-ghost{border-color:var(--midnight-line);color:var(--midnight-ink);background:rgba(255,255,255,.02);}
+.mk-btn-ghost:hover{border-color:var(--midnight-mint);color:var(--midnight-mint);transform:translateY(-2px);}
+.mk-btn-amber{background:var(--midnight-amber);color:#1a1205;}
+
+/* ============ 吸顶：公告条 + 页头 ============ */
+.mk-sticky-shell{position:sticky;top:0;z-index:90;}
+.mk-announce{
+  background:linear-gradient(90deg,#141a2c,#1d2540 55%,#182034);
+  border-bottom:1px solid var(--midnight-line);
+  font-size:.84rem;color:var(--midnight-ink-soft);
+}
+.mk-announce-inner{display:flex;align-items:center;gap:14px;padding:9px 0;flex-wrap:wrap;}
+.mk-announce-tag{
+  flex:0 0 auto;background:var(--midnight-rose);color:#26060f;font-weight:800;font-size:.72rem;
+  letter-spacing:.1em;padding:3px 9px;border-radius:6px;
+}
+.mk-announce-text{flex:1 1 auto;min-width:0;color:var(--midnight-ink);font-weight:600;}
+.mk-announce-text b{color:var(--midnight-amber);}
+.mk-announce-nav{display:flex;gap:16px;font-size:.8rem;}
+.mk-announce-nav a{color:var(--midnight-ink-soft);border-bottom:1px dashed transparent;}
+.mk-announce-nav a:hover{color:var(--midnight-mint);border-color:var(--midnight-mint);}
+
+.mk-header{
+  background:rgba(15,20,32,.92);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--midnight-line);
+}
+.mk-header-inner{display:flex;align-items:center;gap:20px;padding:13px 0;}
+.mk-brand{display:flex;align-items:center;gap:11px;flex:0 0 auto;}
+.mk-brand-mark{
+  width:42px;height:42px;border-radius:12px;flex:0 0 auto;
+  background:radial-gradient(circle at 30% 25%,#22304f,#101728);
+  border:1px solid #35446b;display:grid;place-items:center;
+}
+.mk-brand-name{font-size:1.12rem;font-weight:900;letter-spacing:.04em;}
+.mk-brand-sub{font-size:.68rem;letter-spacing:.26em;color:var(--midnight-mint);text-transform:uppercase;}
+.mk-nav{display:flex;gap:4px;margin-left:6px;flex:1 1 auto;flex-wrap:wrap;}
+.mk-nav a{
+  font-size:.88rem;color:var(--midnight-ink-soft);padding:7px 11px;border-radius:9px;transition:.2s;
+}
+.mk-nav a:hover{color:var(--midnight-mint);background:rgba(111,227,193,.09);}
+.mk-search{
+  display:flex;align-items:center;gap:8px;background:var(--midnight-panel);
+  border:1px solid var(--midnight-line);border-radius:999px;padding:6px 6px 6px 14px;
+  flex:0 1 250px;
+}
+.mk-search input{
+  border:0;background:transparent;color:var(--midnight-ink);font-size:.85rem;width:100%;outline:none;
+}
+.mk-search input::placeholder{color:var(--midnight-ink-dim);}
+.mk-search button{
+  border:0;border-radius:999px;background:var(--midnight-panel-2);color:var(--midnight-mint);
+  font-size:.78rem;padding:6px 12px;font-weight:700;
+}
+.mk-search-result{
+  font-size:.76rem;color:var(--midnight-amber);padding:0 0 0 4px;min-height:1em;
+}
+.mk-burger{
+  display:none;background:transparent;border:1px solid var(--midnight-line);border-radius:10px;
+  color:var(--midnight-ink);width:40px;height:38px;font-size:1.05rem;
+}
+.mk-mobile-nav{display:none;border-top:1px solid var(--midnight-line);background:var(--midnight-panel);}
+.mk-mobile-nav.open{display:block;}
+.mk-mobile-nav a{
+  display:block;padding:11px 18px;font-size:.9rem;color:var(--midnight-ink-soft);
+  border-bottom:1px solid rgba(42,51,80,.6);
+}
+.mk-mobile-nav a:active{background:rgba(111,227,193,.08);}
+
+/* ============ 首屏 ============ */
+.mk-hero{padding:56px 0 46px;position:relative;overflow:hidden;}
+.mk-hero-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,5fr);gap:46px;align-items:center;}
+.mk-hero h1{
+  font-size:clamp(2.1rem,4.4vw,3.3rem);letter-spacing:.02em;margin:12px 0 14px;
+  background:linear-gradient(100deg,#ffffff 12%,#c8f5e6 48%,#9db4ff 90%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.mk-hero-tagline{color:var(--midnight-ink-soft);font-size:1.02rem;max-width:56ch;}
+.mk-hero-intro{
+  margin:20px 0;padding:16px 18px;border-left:3px solid var(--midnight-mint);
+  background:linear-gradient(90deg,rgba(111,227,193,.08),transparent);
+  border-radius:0 12px 12px 0;font-size:.92rem;color:var(--midnight-ink-soft);
+}
+.mk-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px;}
+.mk-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:26px;}
+.mk-stat{
+  background:linear-gradient(160deg,rgba(28,35,56,.9),rgba(21,26,43,.7));
+  border:1px solid var(--midnight-line);border-radius:14px;padding:13px 14px;
+}
+.mk-stat-num{font-size:1.32rem;font-weight:900;color:var(--midnight-mint);letter-spacing:.01em;}
+.mk-stat-num span{font-size:.8rem;color:var(--midnight-ink-dim);font-weight:600;margin-left:3px;}
+.mk-stat-label{font-size:.74rem;color:var(--midnight-ink-dim);letter-spacing:.05em;}
+.mk-hero-visual{position:relative;}
+.mk-hero-frame{
+  border-radius:24px;overflow:hidden;border:1px solid #35446b;
+  box-shadow:0 40px 90px -50px rgba(111,227,193,.55), 0 0 0 1px rgba(255,255,255,.03) inset;
+  background:#0c1220;
+}
+.mk-hero-frame svg{width:100%;height:auto;aspect-ratio:16/12;}
+.mk-hero-badge{
+  position:absolute;left:-16px;bottom:26px;background:rgba(21,26,43,.94);
+  border:1px solid var(--midnight-line);border-radius:14px;padding:11px 15px;
+  backdrop-filter:blur(8px);box-shadow:0 20px 40px -26px #000;
+}
+.mk-hero-badge strong{display:block;color:var(--midnight-amber);font-size:.95rem;}
+.mk-hero-badge span{font-size:.74rem;color:var(--midnight-ink-dim);}
+
+/* ============ 通用卡片 ============ */
+.mk-card{
+  background:linear-gradient(165deg,rgba(28,35,56,.85),rgba(21,26,43,.85));
+  border:1px solid var(--midnight-line);border-radius:var(--midnight-radius);
+  overflow:hidden;transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease;
+  min-width:0;
+}
+.mk-card:hover{transform:translateY(-4px);border-color:#3d4b74;box-shadow:0 24px 48px -30px rgba(111,227,193,.4);}
+.mk-card-body{padding:16px 18px 18px;min-width:0;}
+.mk-card-cover svg{width:100%;aspect-ratio:16/9;height:auto;}
+.mk-tags{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 0;}
+.mk-tag{
+  font-size:.7rem;padding:3px 9px;border-radius:999px;color:var(--midnight-ink-soft);
+  background:rgba(111,227,193,.1);border:1px solid rgba(111,227,193,.22);
+}
+.mk-tag.amber{color:var(--midnight-amber);background:rgba(255,180,92,.1);border-color:rgba(255,180,92,.3);}
+.mk-tag.violet{color:#b6aaff;background:rgba(143,123,255,.12);border-color:rgba(143,123,255,.3);}
+.mk-meta{display:flex;gap:14px;flex-wrap:wrap;font-size:.76rem;color:var(--midnight-ink-dim);margin-top:10px;}
+.mk-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;}
+.mk-act{
+  border:1px solid var(--midnight-line);background:rgba(255,255,255,.02);color:var(--midnight-ink-soft);
+  border-radius:999px;font-size:.76rem;padding:5px 12px;transition:.18s;display:inline-flex;gap:6px;align-items:center;
+}
+.mk-act:hover{border-color:var(--midnight-mint);color:var(--midnight-mint);}
+.mk-act.on{background:rgba(255,124,150,.14);border-color:var(--midnight-rose);color:var(--midnight-rose);}
+.mk-act.liked{background:rgba(111,227,193,.14);border-color:var(--midnight-mint);color:var(--midnight-mint);}
+
+/* ============ 视频区：一重点 + 文字列表 ============ */
+.mk-video-layout{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:26px;align-items:start;margin-top:26px;}
+.mk-video-list{display:flex;flex-direction:column;gap:12px;}
+.mk-video-item{
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;align-items:start;
+  padding:14px 16px;border:1px solid var(--midnight-line);border-radius:14px;
+  background:rgba(21,26,43,.65);transition:.2s;
+}
+.mk-video-item:hover{border-color:#3d4b74;background:rgba(28,35,56,.85);}
+.mk-video-idx{
+  font-size:.82rem;font-weight:900;color:var(--midnight-amber);width:34px;height:34px;flex:0 0 auto;
+  display:grid;place-items:center;border-radius:9px;background:rgba(255,180,92,.1);
+  border:1px solid rgba(255,180,92,.3);
+}
+.mk-video-title{font-size:.95rem;font-weight:700;line-height:1.45;}
+.mk-video-desc{font-size:.8rem;color:var(--midnight-ink-dim);margin-top:4px;}
+
+/* ============ 专题 ============ */
+.mk-topic-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:18px;margin-top:26px;}
+.mk-topic-head{display:flex;justify-content:space-between;align-items:center;gap:10px;}
+.mk-status{font-size:.7rem;font-weight:800;letter-spacing:.08em;padding:3px 9px;border-radius:6px;background:rgba(111,227,193,.12);color:var(--midnight-mint);}
+.mk-status.warm{background:rgba(255,180,92,.14);color:var(--midnight-amber);}
+.mk-status.soon{background:rgba(143,123,255,.14);color:#b6aaff;}
+.mk-topic-list{list-style:none;margin:12px 0 0;padding:0;display:flex;flex-direction:column;gap:8px;}
+.mk-topic-list li{
+  font-size:.82rem;color:var(--midnight-ink-soft);padding-left:16px;position:relative;
+}
+.mk-topic-list li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--midnight-mint);}
+
+/* ============ 关键词解析 ============ */
+.mk-analysis{
+  margin-top:26px;background:linear-gradient(160deg,rgba(28,35,56,.7),rgba(18,23,38,.7));
+  border:1px solid var(--midnight-line);border-radius:22px;padding:30px clamp(18px,3vw,38px);
+}
+.mk-analysis p{color:var(--midnight-ink-soft);font-size:.94rem;margin:0 0 14px;}
+.mk-analysis h3{color:var(--midnight-ink);margin-top:24px;}
+.mk-analysis h3:first-of-type{margin-top:6px;}
+.mk-analysis em{font-style:normal;color:var(--midnight-mint);font-weight:700;}
+
+/* ============ 作者矩阵 ============ */
+.mk-author-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:18px;margin-top:26px;}
+.mk-author{display:grid;grid-template-columns:auto minmax(0,1fr);gap:15px;padding:18px;}
+.mk-avatar{
+  width:56px;height:56px;border-radius:16px;flex:0 0 auto;display:grid;place-items:center;
+  font-size:1.16rem;font-weight:900;color:#0b1020;letter-spacing:.02em;
+}
+.mk-author-name{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:1rem;font-weight:800;}
+.mk-author-field{font-size:.74rem;color:var(--midnight-mint);letter-spacing:.05em;margin-top:2px;}
+.mk-author-bio{font-size:.82rem;color:var(--midnight-ink-dim);margin:8px 0 0;}
+.mk-author-stats{display:flex;gap:14px;flex-wrap:wrap;font-size:.76rem;color:var(--midnight-ink-soft);margin-top:10px;}
+.mk-author-stats b{color:var(--midnight-amber);}
+
+/* ============ 榜单 / 图文索引 ============ */
+.mk-rank-wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:24px;margin-top:26px;align-items:start;}
+.mk-rank-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;}
+.mk-rank-tab{
+  border:1px solid var(--midnight-line);background:transparent;color:var(--midnight-ink-soft);
+  font-size:.8rem;padding:6px 14px;border-radius:999px;transition:.2s;
+}
+.mk-rank-tab.active{background:var(--midnight-mint);color:#08131a;border-color:var(--midnight-mint);font-weight:800;}
+.mk-rank-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;}
+.mk-rank-list li{
+  display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:12px;align-items:center;
+  padding:11px 14px;border:1px solid var(--midnight-line);border-radius:12px;background:rgba(21,26,43,.6);
+}
+.mk-rank-no{font-weight:900;color:var(--midnight-amber);font-size:.9rem;width:22px;}
+.mk-rank-name{font-size:.88rem;font-weight:700;min-width:0;}
+.mk-rank-sub{font-size:.74rem;color:var(--midnight-ink-dim);}
+.mk-rank-val{font-size:.8rem;color:var(--midnight-mint);font-weight:800;white-space:nowrap;}
+
+/* ============ 评价 ============ */
+.mk-comment-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,290px),1fr));gap:16px;margin-top:26px;}
+.mk-comment{padding:18px;display:flex;flex-direction:column;gap:10px;}
+.mk-comment-top{display:flex;align-items:center;gap:10px;}
+.mk-comment-avatar{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:.82rem;font-weight:800;color:#0b1020;flex:0 0 auto;}
+.mk-comment-name{font-size:.85rem;font-weight:700;}
+.mk-comment-when{font-size:.72rem;color:var(--midnight-ink-dim);}
+.mk-comment-text{font-size:.86rem;color:var(--midnight-ink-soft);}
+.mk-comment-stars{color:var(--midnight-amber);font-size:.8rem;letter-spacing:.14em;}
+
+/* ============ FAQ ============ */
+.mk-faq-list{display:flex;flex-direction:column;gap:10px;margin-top:24px;}
+.mk-faq-list details{
+  border:1px solid var(--midnight-line);border-radius:14px;background:rgba(21,26,43,.6);
+  padding:14px 18px;transition:.2s;
+}
+.mk-faq-list details[open]{border-color:rgba(111,227,193,.4);background:rgba(28,35,56,.9);}
+.mk-faq-list summary{
+  cursor:pointer;font-weight:700;font-size:.92rem;list-style:none;display:flex;justify-content:space-between;gap:12px;
+}
+.mk-faq-list summary::-webkit-details-marker{display:none;}
+.mk-faq-list summary::after{content:"+";color:var(--midnight-mint);font-weight:900;}
+.mk-faq-list details[open] summary::after{content:"–";}
+.mk-faq-list p{font-size:.86rem;color:var(--midnight-ink-dim);margin:10px 0 0;}
+
+/* ============ 企业动态 / 合作 ============ */
+.mk-split{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:24px;margin-top:26px;align-items:start;}
+.mk-news{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;}
+.mk-news li{
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:14px;padding:14px 16px;
+  border:1px solid var(--midnight-line);border-radius:14px;background:rgba(21,26,43,.6);
+}
+.mk-news-date{font-size:.72rem;color:var(--midnight-amber);font-weight:800;letter-spacing:.04em;white-space:nowrap;}
+.mk-news-title{font-size:.88rem;font-weight:700;}
+.mk-news-desc{font-size:.79rem;color:var(--midnight-ink-dim);margin-top:3px;}
+.mk-partner-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
+.mk-partner{
+  border:1px dashed #36415f;border-radius:12px;padding:14px 12px;text-align:center;
+  font-size:.82rem;font-weight:700;color:var(--midnight-ink-soft);background:rgba(255,255,255,.015);
+  transition:.2s;
+}
+.mk-partner:hover{border-color:var(--midnight-mint);color:var(--midnight-mint);}
+
+/* ============ 投稿 CTA ============ */
+.mk-cta{
+  margin-top:26px;border:1px solid rgba(111,227,193,.3);border-radius:22px;padding:28px clamp(18px,3vw,34px);
+  background:
+    radial-gradient(600px 200px at 92% 0%,rgba(143,123,255,.24),transparent 70%),
+    linear-gradient(120deg,rgba(111,227,193,.12),rgba(21,26,43,.6));
+  display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;
+}
+.mk-cta h3{font-size:1.16rem;margin-bottom:6px;}
+.mk-cta p{font-size:.86rem;color:var(--midnight-ink-soft);margin:0;max-width:62ch;}
+
+/* ============ 页脚 ============ */
+.mk-footer{border-top:1px solid var(--midnight-line);background:#0b1019;padding:46px 0 30px;margin-top:20px;}
+.mk-footer-grid{display:grid;grid-template-columns:minmax(0,5fr) repeat(3,minmax(0,3fr));gap:28px;}
+.mk-footer-brand{font-size:1.05rem;font-weight:900;letter-spacing:.04em;margin-bottom:8px;}
+.mk-footer-about{font-size:.82rem;color:var(--midnight-ink-dim);max-width:40ch;}
+.mk-footer h4{font-size:.84rem;color:var(--midnight-mint);letter-spacing:.1em;margin-bottom:12px;font-weight:800;}
+.mk-footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;}
+.mk-footer li,.mk-footer li a{font-size:.82rem;color:var(--midnight-ink-dim);}
+.mk-footer li a:hover{color:var(--midnight-mint);}
+.mk-footer-bottom{
+  margin-top:30px;padding-top:18px;border-top:1px solid rgba(42,51,80,.7);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:.76rem;color:var(--midnight-ink-dim);
+}
+.mk-footer-bottom b{color:var(--midnight-ink-soft);font-weight:600;}
+
+/* ============ 弹窗 & Toast ============ */
+.mk-modal{
+  position:fixed;inset:0;z-index:200;display:none;align-items:center;justify-content:center;padding:20px;
+  background:rgba(6,9,16,.76);backdrop-filter:blur(4px);
+}
+.mk-modal.open{display:flex;}
+.mk-modal-panel{
+  width:min(560px,100%);max-height:86vh;overflow:auto;background:var(--midnight-panel);
+  border:1px solid #35446b;border-radius:20px;padding:24px;
+  box-shadow:0 40px 90px -40px #000;
+}
+.mk-modal-title{font-size:1.08rem;margin-bottom:6px;}
+.mk-modal-close{
+  float:right;border:1px solid var(--midnight-line);background:transparent;color:var(--midnight-ink-soft);
+  border-radius:9px;width:32px;height:32px;font-size:1rem;
+}
+.mk-field{margin-top:14px;}
+.mk-field label{display:block;font-size:.8rem;color:var(--midnight-ink-dim);margin-bottom:6px;}
+.mk-field input,.mk-field textarea{
+  width:100%;background:#101728;border:1px solid var(--midnight-line);border-radius:10px;
+  padding:10px 12px;color:var(--midnight-ink);font-size:.88rem;outline:none;font-family:inherit;
+}
+.mk-field input:focus,.mk-field textarea:focus{border-color:var(--midnight-mint);}
+.mk-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#1d2540;border:1px solid var(--midnight-mint);color:var(--midnight-ink);
+  padding:11px 20px;border-radius:999px;font-size:.85rem;z-index:300;
+  opacity:0;pointer-events:none;transition:.26s ease;box-shadow:0 20px 44px -22px #000;
+}
+.mk-toast.show{opacity:1;transform:translate(-50%,0);}
+
+.mk-top-btn{
+  position:fixed;right:22px;bottom:26px;z-index:150;width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--midnight-line);background:var(--midnight-panel-2);color:var(--midnight-mint);
+  font-size:1.05rem;display:none;place-items:center;box-shadow:0 16px 34px -18px #000;
+}
+.mk-top-btn.show{display:grid;}
+
+/* ============ 响应式 ============ */
+@media(max-width:980px){
+  .mk-hero-grid,.mk-video-layout,.mk-rank-wrap,.mk-split{grid-template-columns:minmax(0,1fr);}
+  .mk-hero-frame svg{aspect-ratio:16/10;}
+  .mk-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .mk-nav{display:none;}
+  .mk-burger{display:grid;place-items:center;}
+  .mk-search{order:3;flex:1 1 100%;max-width:none;}
+  .mk-header-inner{flex-wrap:wrap;gap:12px;}
+}
+@media(max-width:600px){
+  :root{--midnight-sticky:150px;}
+  .mk-section{padding:46px 0;}
+  .mk-wrap{width:calc(100% - 28px);}
+  .mk-stats{grid-template-columns:minmax(0,1fr);}
+  .mk-footer-grid{grid-template-columns:minmax(0,1fr);}
+  .mk-hero-badge{left:8px;bottom:8px;}
+  .mk-announce-nav{display:none;}
+  .mk-partner-grid{grid-template-columns:minmax(0,1fr);}
+}
+@media(prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;}
+  html{scroll-behavior:auto;}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="mk-sticky-shell">
+  <div class="mk-announce">
+    <div class="mk-wrap mk-announce-inner">
+      <span class="mk-announce-tag">官方发布</span>
+      <div class="mk-announce-text">
+        <b>11 月 22 日</b> 上新：夜间影像专辑《凌晨三点的街灯》第 4 集已上线，<b>“午夜久干”冬季创作挑战</b>报名通道同步开启，投稿即有机会进入首页推荐位。
+      </div>
+      <nav class="mk-announce-nav" aria-label="公告快捷入口">
+        <a href="#mkVideo">观看新片</a>
+        <a href="#mkSubmit">报名挑战</a>
+      </nav>
+    </div>
+  </div>
+
+  <header class="mk-header">
+    <div class="mk-wrap mk-header-inner">
+      <a class="mk-brand" href="#mkTop" aria-label="午夜久干官方网站首页">
+        <span class="mk-brand-mark" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" role="presentation">
+            <circle cx="12" cy="11" r="6.4" fill="none" stroke="#6fe3c1" stroke-width="1.8"></circle>
+            <path d="M10 8.6l5.2 2.6L10 13.8z" fill="#ffb45c"></path>
+            <path d="M4 19h16" stroke="#8f7bff" stroke-width="1.8" stroke-linecap="round"></path>
+          </svg>
+        </span>
+        <span>
+          <span class="mk-brand-name">午夜久干</span><br>
+          <span class="mk-brand-sub">Midnight Studio</span>
+        </span>
+      </a>
+
+      <nav class="mk-nav" aria-label="主导航">
+        <a href="#mkVideo">精品内容</a>
+        <a href="#mkTopic">专题企划</a>
+        <a href="#mkAnalysis">关键词解析</a>
+        <a href="#mkAuthors">创作者</a>
+        <a href="#mkRank">数据榜单</a>
+        <a href="#mkComments">用户口碑</a>
+        <a href="#mkFaq">帮助中心</a>
+      </nav>
+
+      <form class="mk-search" role="search" onsubmit="return false;">
+        <input id="mkSearchInput" type="search" placeholder="搜索作品 / 创作者 / 专题" aria-label="站内搜索">
+        <button type="button" id="mkSearchBtn">搜索</button>
+      </form>
+      <div class="mk-search-result" id="mkSearchResult" aria-live="polite"></div>
+
+      <button class="mk-burger" id="mkBurger" aria-label="展开导航菜单" aria-expanded="false">☰</button>
+    </div>
+    <div class="mk-mobile-nav" id="mkMobileNav">
+      <a href="#mkVideo">精品内容</a>
+      <a href="#mkTopic">专题企划</a>
+      <a href="#mkAnalysis">关键词解析</a>
+      <a href="#mkAuthors">创作者</a>
+      <a href="#mkRank">数据榜单</a>
+      <a href="#mkComments">用户口碑</a>
+      <a href="#mkNews">企业动态</a>
+      <a href="#mkFaq">帮助中心</a>
+    </div>
+  </header>
+</div>
+
+<main id="mkTop">
+
+  <!-- ================= 首屏 ================= -->
+  <section class="mk-hero mk-wrap" aria-labelledby="mkHeroTitle">
+    <div class="mk-hero-grid">
+      <div>
+        <span class="mk-eyebrow">官方网站 · 原创视频品牌</span>
+        <h1 id="mkHeroTitle">午夜久干</h1>
+        <p class="mk-hero-tagline">
+          夜越深，影像越清醒。午夜久干是一支深耕夜间题材的原创视频品牌团队，用长镜头、环境声与真实人物，记录城市在深夜里的另一副面孔。
+        </p>
+        <div class="mk-hero-intro">
+          作为持续运营的午夜久干官方网站，我们为企业与创作者搭建高品质内容生态：从选题企划、实地拍摄到高清正版成片发布，全流程透明可追溯。平台坚持用户至上，以匠心打磨每一帧画面，让深夜故事被更多人真实看见。
+        </div>
+        <div class="mk-hero-actions">
+          <a class="mk-btn mk-btn-primary" href="#mkVideo">观看精品内容</a>
+          <a class="mk-btn mk-btn-ghost" href="#mkSubmit">报名创作挑战</a>
+          <a class="mk-btn mk-btn-ghost" href="#mkAuthors">认识创作者</a>
+        </div>
+        <div class="mk-stats">
+          <div class="mk-stat">
+            <div class="mk-stat-num" data-count="1286">0<span>部</span></div>
+            <div class="mk-stat-label">累计发布原创短片</div>
+          </div>
+          <div class="mk-stat">
+            <div class="mk-stat-num" data-count="47">0<span>位</span></div>
+            <div class="mk-stat-label">签约与入驻创作者</div>
+          </div>
+          <div class="mk-stat">
+            <div class="mk-stat-num" data-count="92">0<span>%</span></div>
+            <div class="mk-stat-label">用户完播好评率</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mk-hero-visual">
+        <div class="mk-hero-frame">
+          <svg viewBox="0 0 800 600" role="img" aria-label="午夜久干首屏主视觉：深夜街口的路灯、便利店与行人剪影构成的夜色长镜头">
+            <defs>
+              <linearGradient id="mkSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#0b1024"></stop>
+                <stop offset="55%" stop-color="#18203c"></stop>
+                <stop offset="100%" stop-color="#28304f"></stop>
+              </linearGradient>
+              <linearGradient id="mkLamp" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffd18e" stop-opacity=".85"></stop>
+                <stop offset="1" stop-color="#ffb45c" stop-opacity="0"></stop>
+              </linearGradient>
+              <linearGradient id="mkGlass" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#6fe3c1" stop-opacity=".35"></stop>
+                <stop offset="1" stop-color="#8f7bff" stop-opacity=".18"></stop>
+              </linearGradient>
+            </defs>
+            <rect width="800" height="600" fill="url(#mkSky)"></rect>
+            <circle cx="640" cy="112" r="52" fill="#e9eefc" opacity=".16"></circle>
+            <circle cx="640" cy="112" r="26" fill="#e9eefc" opacity=".5"></circle>
+            <g fill="#0e1424">
+              <rect x="0" y="360" width="170" height="240"></rect>
+              <rect x="150" y="300" width="120" height="300"></rect>
+              <rect x="560" y="330" width="150" height="270"></rect>
+              <rect x="690" y="286" width="110" height="314"></rect>
+            </g>
+            <g fill="#1b2340">
+              <rect x="24" y="392" width="34" height="44" rx="3"></rect>
+              <rect x="82" y="392" width="34" height="44" rx="3"></rect>
+              <rect x="24" y="460" width="34" height="44" rx="3"></rect>
+              <rect x="82" y="460" width="34" height="44" rx="3"></rect>
+              <rect x="172" y="336" width="36" height="48" rx="3"></rect>
+              <rect x="232" y="336" width="36" height="48" rx="3"></rect>
+              <rect x="606" y="366" width="36" height="46" rx="3"></rect>
+              <rect x="666" y="366" width="36" height="46" rx="3"></rect>
+              <rect x="722" y="322" width="32" height="42" rx="3"></rect>
+            </g>
+            <rect x="0" y="470" width="800" height="130" fill="#121a2c"></rect>
+            <rect x="0" y="470" width="800" height="6" fill="#2a3350"></rect>
+            <g>
+              <rect x="286" y="368" width="230" height="120" rx="8" fill="#1a2butter" opacity="0"></rect>
+              <rect x="286" y="368" width="230" height="120" rx="8" fill="#161d30"></rect>
+              <rect x="298" y="380" width="206" height="74" rx="5" fill="url(#mkGlass)"></rect>
+              <rect x="298" y="468" width="206" height="10" fill="#2a3350"></rect>
+              <g fill="#6fe3c1" opacity=".9">
+                <rect x="312" y="398" width="70" height="7" rx="3"></rect>
+                <rect x="312" y="414" width="112" height="7" rx="3"></rect>
+                <rect x="312" y="430" width="52" height="7" rx="3"></rect>
+              </g>
+              <circle cx="478" cy="404" r="15" fill="#ffb45c" opacity=".85"></circle>
+            </g>
+            <g>
+              <rect x="150" y="196" width="7" height="286" fill="#2c3554"></rect>
+              <path d="M153 196h84l-14 26h-70z" fill="#3b466b"></path>
+              <ellipse cx="200" cy="236" rx="76" ry="30" fill="url(#mkLamp)"></ellipse>
+              <circle cx="240" cy="204" r="11" fill="#ffd18e"></circle>
+            </g>
+            <ellipse cx="470" cy="556" rx="150" ry="20" fill="#0a0f1a" opacity=".7"></ellipse>
+            <g fill="#070b14">
+              <circle cx="432" cy="482" r="15"></circle>
+              <rect x="419" y="500" width="27" height="60" rx="11"></rect>
+              <rect x="421" y="552" width="10" height="34" rx="5"></rect>
+              <rect x="437" y="552" width="10" height="34" rx="5"></rect>
+              <circle cx="524" cy="492" r="13"></circle>
+              <rect x="512" y="508" width="25" height="52" rx="10"></rect>
+              <rect x="514" y="554" width="9" height="30" rx="4"></rect>
+              <rect x="528" y="554" width="9" height="30" rx="4"></rect>
+            </g>
+            <rect x="40" y="510" width="140" height="4" rx="2" fill="#6fe3c1" opacity=".4"></rect>
+            <rect x="620" y="536" width="120" height="4" rx="2" fill="#8f7bff" opacity=".5"></rect>
+          </svg>
+        </div>
+        <div class="mk-hero-badge">
+          <strong>今夜 21:40 更新</strong>
+          <span>《凌晨三点的街灯》EP04 · 高清正版</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 精品内容 ================= -->
+  <section class="mk-section" id="mkVideo" aria-labelledby="mkVideoTitle">
+    <div class="mk-wrap">
+      <span class="mk-eyebrow">精品内容 · 焦点推荐</span>
+      <h2 class="mk-h2" id="mkVideoTitle">午夜久干的本周<em>焦点影像</em>与热门条目</h2>
+      <p class="mk-lead">每周由官方编辑部从午夜久干内容生态中挑选一部重点作品与五条高热条目，所有成片均为原创正版高清版本，支持收藏与分享。</p>
+
+      <div class="mk-video-layout">
+        <article class="mk-card">
+          <div class="mk-card-cover">
+            <svg viewBox="0 0 800 450" role="img" aria-label="焦点作品《凌晨三点的街灯》封面：空荡十字路口与便利店暖光">
+              <defs>
+                <linearGradient id="mkFocusSky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#101833"></stop>
+                  <stop offset="100%" stop-color="#202a4a"></stop>
+                </linearGradient>
+              </defs>
+              <rect width="800" height="450" fill="url(#mkFocusSky)"></rect>
+              <circle cx="180" cy="88" r="34" fill="#e9eefc" opacity=".22"></circle>
+              <g stroke="#39456b" stroke-width="2" fill="none">
+                <path d="M0 320h800"></path>
+                <path d="M120 450l120-130h320l140 130"></path>
+                <path d="M400 320v130"></path>
+              </g>
+              <rect x="240" y="212" width="320" height="108" rx="10" fill="#18203a"></rect>
+              <rect x="252" y="224" width="296" height="66" rx="6" fill="#22314f"></rect>
+              <g fill="#ffb45c">
+                <rect x="266" y="238" width="60" height="8" rx="4"></rect>
+                <rect x="266" y="256" width="104" height="8" rx="4"></rect>
+              </g>
+              <g fill="#6fe3c1" opacity=".8">
+                <rect x="420" y="238" width="42" height="8" rx="4"></rect>
+                <rect x="420" y="256" width="80" height="8" rx="4"></rect>
+              </g>
+              <rect x="240" y="314" width="320" height="8" fill="#2a3350"></rect>
+              <g fill="#070b14">
+                <circle cx="392" cy="250" r="12"></circle>
+                <rect x="382" y="264" width="20" height="46" rx="9"></rect>
+              </g>
+              <g stroke="#6fe3c1" stroke-width="3" opacity=".55">
+                <path d="M60 400h140"></path>
+                <path d="M600 400h150"></path>
+              </g>
+            </svg>
+          </div>
+          <div class="mk-card-body">
+            <div class="mk-tags">
+              <span class="mk-tag">夜间影像</span>
+              <span class="mk-tag amber">官方首发</span>
+              <span class="mk-tag violet">高清正版</span>
+            </div>
+            <h3 class="mk-h3" style="margin-top:12px;">凌晨三点的街灯：整座城市在换气</h3>
+            <p class="mk-muted" style="margin:6px 0 0;">
+              《凌晨三点的街灯》是午夜久干持续更新的季节企划，第 4 集把镜头放在城市东北角的一处十字路口。便利店换班、代驾司机等候、清洁队清扫主路的时刻，被完整地保留在同一条长镜头里。导演组刻意不配旁白，只留环境声与两段居民的采访，让深夜的呼吸感自然浮现。
+            </p>
+            <div class="mk-meta">
+              <span>作者：阿砚</span>
+              <span>时长：18′42″</span>
+              <span>播放 <b data-play="84213">84,213</b></span>
+              <span>收藏 <b data-fav="3312">3,312</b></span>
+            </div>
+            <div class="mk-actions">
+              <button class="mk-act" data-like>♡ 点赞 <span data-like-num>1264</span></button>
+              <button class="mk-act" data-favorite>☆ 收藏</button>
+              <button class="mk-act" data-share>⤴ 复制链接</button>
+              <button class="mk-act" data-comment-open>💬 评论</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="mk-video-list">
+          <article class="mk-video-item">
+            <span class="mk-video-idx">01</span>
+            <div>
+              <h3 class="mk-video-title">夜班公交第 17 站：一个人的终点站</h3>
+              <p class="mk-video-desc">跟车 9 小时，记录末班车司机与三位乘客的沉默。标签：日常记录 / 城市探索｜作者：阿砚｜播放 3.2 万</p>
+              <div class="mk-actions">
+                <button class="mk-act" data-like>♡ 点赞 <span data-like-num>612</span></button>
+                <button class="mk-act" data-favorite>☆ 收藏</button>
+                <button class="mk-act" data-share>⤴ 分享</button>
+              </div>
+            </div>
+          </article>
+          <article class="mk-video-item">
+            <span class="mk-video-idx">02</span>
+            <div>
+              <h3 class="mk-video-title">深夜食堂的第五张桌子</h3>
+              <p class="mk-video-desc">一家营业到凌晨四点的面馆，老板说最忙的时候是下雨天。标签：美食烹饪 / 人物访谈｜作者：陈麦｜播放 2.8 万</p>
+              <div class="mk-actions">
+                <button class="mk-act" data-like>♡ 点赞 <span data-like-num>498</span></button>
+                <button class="mk-act" data-favorite>☆ 收藏</button>
+                <button class="mk-act" data-share>⤴ 分享</button>
+              </div>
+            </div>
+          </article>
+          <article class="mk-video-item">
+            <span class="mk-video-idx">03</span>
+            <div>
+              <h3 class="mk-video-title">用一支手持镜头拍完一夜雨</h3>
+              <p class="mk-video-desc">从感光度设置到录音方案，完整拆解低照度拍摄流程，附带器材清单。标签：教程干货 / 创作幕后｜作者：北岭｜播放 2.1 万</p>
+              <div class="mk-actions">
+                <button class="mk-act" data-like>♡ 点赞 <span data-like-num>377</span></button>
+                <button class="mk-act" data-favorite>☆ 收藏</button>
+                <button class="mk-act" data-share>⤴ 分享</button>
+              </div>
+            </div>
+          </article>
+          <article class="mk-video-item">
+            <span class="mk-video-idx">04</span>
+            <div>
+              <h3 class="mk-video-title">便利店关东煮的 12 种情绪</h3>
+              <p class="mk-video-desc">我们把镜头对准热柜前的等待，观察深夜消费背后的情绪节奏。标签：生活方式 / 行业观察｜作者：小满｜播放 1.7 万</p>
+              <div class="mk-actions">
+                <button class="mk-act" data-like>♡ 点赞 <span data-like-num>289</span></button>
+                <button class="mk-act" data-favorite>☆ 收藏</button>
+                <button class="mk-act" data-share>⤴ 分享</button>
+              </div>
+            </div>
+          </article>
+          <article class="mk-video-item">
+            <span class="mk-video-idx">05</span>
+            <div>
+              <h3 class="mk-video-title">收音师为什么离不开凌晨的风</h3>
+              <p class="mk-video-desc">一次关于环境声采集的对谈，聊夜风、回声与城市底噪的取舍。标签：深度测评 / 知识科普｜作者：周不晚｜播放 1.4 万</p>
+              <div class="mk-actions">
+                <button class="mk-act" data-like>♡ 点赞 <span data-like-num>233</span></button>
+                <button class="mk-act" data-favorite>☆ 收藏</button>
+                <button class="mk-act" data-share>⤴ 分享</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 专题 ================= -->
+  <section class="mk-section" id="mkTopic" aria-labelledby="mkTopicTitle">
+    <div class="mk-wrap">
+      <span class="mk-eyebrow">专题企划 · 正在更新</span>
+      <h2 class="mk-h2" id="mkTopicTitle">午夜久干的<em>四个长期专题</em>，把深夜拍成体系</h2>
+      <p class="mk-lead">每个专题由官方编辑部主导、社区创作者共同参与，更新状态与内容条目公开可查，构成午夜久干平台稳定的内容生态。</p>
+
+      <div class="mk-topic-grid">
+        <article class="mk-card mk-card-body">
+          <div class="mk-topic-head">
+            <h3 class="mk-h3">凌晨三点的街灯</h3>
+            <span class="mk-status">连载更新</span>
+          </div>
+          <p class="mk-muted" style="margin:6px 0 0;">以城市路口为单位，记录深夜仍在运转的人。目前已拍摄 9 个街区，单集 15–20 分钟。</p>
+          <ul class="mk-topic-list">
+            <li>EP04 十字路口与便利店换班</li>
+            <li>EP05 通宵药店的药师</li>
+            <li>EP06 高架下的修车摊</li>
+          </ul>
+        </article>
+        <article class="mk-card mk-card-body">
+          <div class="mk-topic-head">
+            <h3 class="mk-h3">夜行者的手艺</h3>
+            <span class="mk-status warm">策划中</span>
+          </div>
+          <p class="mk-muted" style="margin:6px 0 0;">寻找只在夜里工作的手艺人：缝补、修表、磨刀、烘焙，记录他们的工具与节奏。</p>
+          <ul class="mk-topic-list">
+            <li>磨刀摊的四十年</li>
+            <li>凌晨烘焙间的第一炉</li>
+            <li>一位修表师的夜灯</li>
+          </ul>
+        </article>
+        <article class="mk-card mk-card-body">
+          <div class="mk-topic-head">
+            <h3 class="mk-h3">低照度影像实验</h3>
+            <span class="mk-status soon">开放投稿</span>
+          </div>
+          <p class="mk-muted" style="margin:6px 0 0;">面向创作者的技术专题，鼓励用有限器材拍出有质感的夜色，优秀作品进入首页推荐。</p>
+          <ul class="mk-topic-list">
+            <li>手持与稳定器的取舍</li>
+            <li>夜景白平衡实测</li>
+            <li>城市底噪的收音方案</li>
+          </ul>
+        </article>
+        <article class="mk-card mk-card-body">
+          <div class="mk-topic-head">
+            <h3 class="mk-h3">深夜来信</h3>
+            <span class="mk-status">长期征集</span>
+          </div>
+          <p class="mk-muted" style="margin:6px 0 0;">由用户投稿的声音与文字，经编辑部改编为 3 分钟短片，讲述普通人的夜间时刻。</p>
+          <ul class="mk-topic-list">
+            <li>一位夜班护士的 4 年</li>
+            <li>搬家前夜的最后一通电话</li>
+            <li>便利店的第一份兼职</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 关键词解析 ================= -->
+  <section class="mk-section" id="mkAnalysis" aria-labelledby="mkAnalysisTitle">
+    <div class="mk-wrap">
+      <span class="mk-eyebrow">深度解析 · 品牌说明</span>
+      <h2 class="mk-h2" id="mkAnalysisTitle">读懂<em>午夜久干</em>：一个夜间影像品牌的内容方法</h2>
+      <p class="mk-lead">这一节由品牌编辑部撰写，说明午夜久干官方网站的定位、选题标准与运营方式，帮助新用户和创作者快速理解我们。</p>
+
+      <div class="mk-analysis">
+        <h3>一、午夜久干是什么：从一部短片到一套内容体系</h3>
+        <p>午夜久干起步于 2019 年冬天，最初只是一支三人小队在城南天桥下拍的一段 6 分钟夜景。当时没有人认为深夜题材能做成品牌，因为夜景拍摄成本高、光线差、人物难约。但我们发现，深夜恰恰是城市最真实的时刻：白天的秩序退场，剩下的人会讲出更坦率的话。于是“午夜久干”成为团队的名字，也成为内容的方向——<em>午夜久干</em>不是某个噱头，而是一种拍片习惯：等灯变暗，再把镜头打开。</p>
+        <p>经过数年持续运营，午夜久干已经从单部短片成长为一个具备完整内容生态的视频品牌。官方网站把内容分成三层：由编辑部主导的长期专题、由签约创作者产出的原创短片、以及由社区用户投稿的夜间来信。三层内容共用一套审片标准，所有成片统一输出高清正版版本，并保留完整的拍摄说明，确保观众看到的不只是画面，还有画面背后的方法。</p>
+
+        <h3>二、选题标准：什么值得被午夜久干记录</h3>
+        <p>午夜久干每天会收到大量投稿，但真正进入首页的不足十分之一。我们的选题标准有三条。第一是<em>具体</em>：不拍“深夜的孤独”这种抽象主题，而是拍某个路口、某家店、某个人在具体时间里做的事。第二是<em>可验证</em>：片中出现的场所、人物与时间都要经过核实，涉及他人的镜头需取得同意，这也是品牌口碑的基础。第三是<em>有方法</em>：我们偏爱那些能讲清“怎么拍、为什么这么拍”的作品，因为教程与幕后内容能让社区共同成长。</p>
+        <p>基于这三条标准，午夜久干逐步形成了几个固定内容方向：日常记录让普通夜晚被看见，人物访谈提供纵深，教程干货与深度测评承担知识科普功能，城市探索与在地文化则负责拓宽地理边界。题材之间并不割裂，一个专题往往同时包含记录、访谈与幕后，观众可以从不同入口进入同一个故事。</p>
+
+        <h3>三、品质与信任：官方网站如何保证内容可靠</h3>
+        <p>作为企业级视频门户，午夜久干官方网站对内容品质的把控贯穿全流程。拍摄阶段，我们要求创作者提交分镜与收音方案；后期阶段，编辑部会二次检查画面亮度、字幕规范与音乐授权；发布阶段，每条内容都标注作者、时长、拍摄器材与更新日期，方便用户判断信息是否新鲜。涉及商业合作的内容会明确标注，避免观众误解。</p>
+        <p>我们同样重视用户至上与社区共治。评论区开放举报与反馈入口，编辑部在 48 小时内响应；每季度公布一次内容治理报告，说明下架原因与申诉结果。这些看起来偏“后台”的工作，恰恰是午夜久干值得信赖的原因——<em>真实</em>不只在镜头里，也在运营细节里。</p>
+
+        <h3>四、面向未来：让夜色成为可持续的创作现场</h3>
+        <p>2026 年，午夜久干把重心放在两件事上：一是继续扩大原创比例，让签约创作者拥有稳定的制作支持；二是把低照度拍摄经验整理成公开文档，降低新人进入夜间题材的门槛。我们相信，一个品牌的影响力不只来自播放量，也来自它是否让更多人敢于拿起相机走进夜色。午夜久干希望成为那个起点：你在这里看到别人的夜晚，也在这里上传自己的夜晚。官方网站会持续运营，记录每一次上传、每一场比赛报名与每一个被认真对待的创意。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 创作者 ================= -->
+  <section class="mk-section" id="mkAuthors" aria-labelledby="mkAuthorsTitle">
+    <div class="mk-wrap">
+      <span class="mk-eyebrow">创作者矩阵 · 双列简介</span>
+      <h2 class="mk-h2" id="mkAuthorsTitle">支撑午夜久干内容生态的<em>六位创作者</em></h2>
+      <p class="mk-lead">他们来自纪录片、广告、声音设计与独立影像等不同背景，共同点是愿意为一段夜色多等两小时。</p>
+
+      <div class="mk-author-grid">
+        <article class="mk-card mk-author">
+          <div class="mk-avatar" style="background:linear-gradient(140deg,#6fe3c1,#57c6ff);">砚</div>
+          <div>
+            <div class="mk-author-name">阿砚 <button class="mk-act" data-author="阿砚">简介</button></div>
+            <div class="mk-author-field">夜间纪实 · 长镜头</div>
+            <p class="mk-author-bio">纪录片导演出身，习惯用一条长镜头讲完一个夜晚。负责午夜久干“凌晨三点的街灯”专题的整体调度，擅长在嘈杂环境里捕捉人物停顿的瞬间。坚持现场收音，反对过度配乐。希望观众看完后愿意在深夜多走两条街。</p>
+            <div class="mk-author-stats"><span>作品 <b>86</b></span><span>粉丝 <b>12.4 万</b></span></div>
+          </div>
+        </article>
+
+        <article class="mk-card mk-author">
+          <div class="mk-avatar" style="background:linear-gradient(140deg,#ffb45c,#ff7c96);">麦</div>
+          <div>
+            <div class="mk-author-name">陈麦 <button class="mk-act" data-author="陈麦">简介</button></div>
+            <div class="mk-author-field">美食人文 · 人物访谈</div>
+            <p class="mk-author-bio">做过六年美食记者，擅长把一顿夜宵拍成一段生活史。她在午夜久干负责“深夜食堂”系列，坚持先聊天再开机，让被拍者忘记镜头的存在。她的片子节奏慢，但信息密度高，常被观众称为“可以下饭的访谈”。</p>
+            <div class="mk-author-stats"><span>作品 <b>64</b></span><span>粉丝 <b>9.8 万</b></span></div>
+          </div>
+        </article>
+
+        <article class="mk-card mk-author">
+          <div class="mk-avatar" style="background:linear-gradient(140deg,#8f7bff,#57c6ff);">北</div>
+          <div>
+            <div class="mk-author-name">北岭 <button class="mk-act" data-author="北岭">简介</button></div>
+            <div class="mk-author-field">摄影技术 · 器材测评</div>
+            <p class="mk-author-bio">前广告摄影指导，现专注低照度影像教学。为午夜久干制作“低照度影像实验”系列，把复杂的布光与降噪流程拆成可执行的步骤。他反对唯器材论，常说“先拍清楚，再谈风格”。所有教程附有实拍样片与参数表。</p>
+            <div class="mk-author-stats"><span>作品 <b>112</b></span><span>粉丝 <b>15.1 万</b></span></div>
+          </div>
+        </article>
+
+        <article class="mk-card mk-author">
+          <div class="mk-avatar" style="background:linear-gradient(140deg,#57c6ff,#6fe3c1);">满</div>
+          <div>
+            <div class="mk-author-name">小满 <button class="mk-act" data-author="小满">简介</button></div>
+            <div class="mk-author-field">生活方式 · 城市观察</div>
+            <p class="mk-author-bio">社会学专业毕业，喜欢蹲在便利店门口数人流。她的作品关注深夜消费与情绪的关系，擅长把日常场景拍出结构感。在午夜久干负责短篇栏目，单集多在 5 分钟以内，信息清晰，很适合作为新观众的入门内容。</p>
+            <div class="mk-author-stats"><span>作品 <b>73</b></span><span>粉丝 <b>7.6 万</b></span></div>
+          </div>
+        </article>
+
+        <article class="mk-card mk-author">
+          <div class="mk-avatar" style="background:linear-gradient(140deg,#ff7c96,#8f7bff);">周</div>
+          <div>
+            <div class="mk-author-name">周不晚 <button class="mk-act" data-author="周不晚">简介</button></div>
+            <div class="mk-author-field">声音设计 · 幕后</div>
+            <p class="mk-author-bio">声音设计师，负责午夜久干多部作品的环境声采集与混音。他坚持凌晨的风、远处的车流与店招的电流声都属于作品本身，不该被音乐盖住。其幕后视频让很多观众第一次意识到“听”也是观看的一部分。</p>
+            <div class="mk-author-stats"><span>作品 <b>58</b></span><span>粉丝 <b>6.2 万</b></span></div>
+          </div>
+        </article>
+
+        <article class="mk-card mk-author">
+          <div class="mk-avatar" style="background:linear-gradient(140deg,#ffb45c,#6fe3c1);">禾</div>
+          <div>
+            <div class="mk-author-name">禾一 <button class="mk-act" data-author="禾一">简介</button></div>
+            <div class="mk-author-field">独立影像 · 实验短片</div>
+            <p class="mk-author-bio">独立创作者，作品介于纪录与实验之间。她擅长用固定机位与自然光拍摄，画面安静但余味长。加入午夜久干后开始尝试有声短片，并在社区开放创作笔记，与新人分享低预算拍摄的取舍经验。</p>
+            <div class="mk-author-stats"><span>作品 <b>41</b></span><span>粉丝 <b>5.4 万</b></span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 数据榜单 + 图文索引 ================= -->
+  <section class="mk-section" id="mkRank" aria-labelledby="mkRankTitle">
+    <div class="mk-wrap">
+      <span class="mk-eyebrow">数据榜单 · 图文索引</span>
+      <h2 class="mk-h2" id="mkRankTitle">午夜久干的<em>热度与口碑</em>，每周三更新</h2>
+      <p class="mk-lead">榜单由播放完成度、收藏率与用户评价共同计算，展示的是持续被看完的作品，而不只是一次性点击。</p>
+
+      <div class="mk-rank-wrap">
+        <div>
+          <div class="mk-rank-tabs" role="tablist" aria-label="榜单切换">
+            <button class="mk-rank-tab active" data-rank-tab="hot" role="tab" aria-selected="true">热度榜</button>
+            <button class="mk-rank-tab" data-rank-tab="new" role="tab" aria-selected="false">新人榜</button>
+            <button class="mk-rank-tab" data-rank-tab="praise" role="tab" aria-selected="false">口碑榜</button>
+          </div>
+          <ul class="mk-rank-list" id="mkRankList"></ul>
+        </div>
+
+        <div class="mk-card mk-card-body">
+          <h3 class="mk-h3">本周图文索引</h3>
+          <p class="mk-muted" style="margin:4px 0 12px;">适合通勤路上快速浏览的内容摘要，完整版本可在精品内容区查看。</p>
+          <ul class="mk-topic-list" style="gap:12px;">
+            <li><b style="color:var(--midnight-ink);">夜班表 · 一张图看懂谁在工作</b><br><span class="mk-muted">用时间轴梳理凌晨 0–5 点的职业分布，附采访花絮。</span></li>
+            <li><b style="color:var(--midnight-ink);">低照度拍摄的 7 个常见误区</b><br><span class="mk-muted">从过曝天空到误用降噪，每条附带对比截图。</span></li>
+            <li><b style="color:var(--midnight-ink);">深夜便利店的商品陈列逻辑</b><br><span class="mk-muted">走访 6 家门店，整理夜间客单价与陈列位置的关系。</span></li>
+            <li><b style="color:var(--midnight-ink);">一位收音师的器材包清单</b><br><span class="mk-muted">含防风毛套、录音机与备用电池的真实使用体验。</span></li>
+          </ul>
+          <button class="mk-btn mk-btn-ghost" style="margin-top:16px;" data-share>分享榜单</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 用户口碑 ================= -->
+  <section class="mk-section" id="mkComments" aria-labelledby="mkCommentsTitle">
+    <div class="mk-wrap">
+      <span class="mk-eyebrow">用户口碑 · 双列短评</span>
+      <h2 class="mk-h2" id="mkCommentsTitle">观众如何评价<em>午夜久干</em>的内容</h2>
+      <p class="mk-lead">以下评价来自站内真实反馈，包含不同维度：画面、信息量、节奏与社区体验。</p>
+
+      <div class="mk-comment-grid">
+        <article class="mk-card mk-comment">
+          <div class="mk-comment-top">
+            <span class="mk-comment-avatar" style="background:linear-gradient(140deg,#6fe3c1,#57c6ff);">林</span>
+            <div>
+              <div class="mk-comment-name">林舟</div>
+              <div class="mk-comment-when">11 月 20 日 · 收藏 12 部</div>
+            </div>
+          </div>
+          <div class="mk-comment-stars">★★★★★</div>
+          <p class="mk-comment-text">第一次看完《凌晨三点的街灯》就订阅了。它没有煽情配乐，但我知道那种安静是真的，像是自己也站在那个路口。</p>
+        </article>
+
+        <article class="mk-card mk-comment">
+          <div class="mk-comment-top">
+            <span class="mk-comment-avatar" style="background:linear-gradient(140deg,#ffb45c,#ff7c96);">阿</span>
+            <div>
+              <div class="mk-comment-name">阿桐</div>
+              <div class="mk-comment-when">11 月 18 日 · 上传 3 部</div>
+            </div>
+          </div>
+          <div class="mk-comment-stars">★★★★☆</div>
+          <p class="mk-comment-text">作为新人投稿者，编辑给的反馈非常具体，连收音位置都标了出来。扣一星是因为投稿审核偶尔要等两天。</p>
+        </article>
+
+        <article class="mk-card mk-comment">
+          <div class="mk-comment-top">
+            <span class="mk-comment-avatar" style="background:linear-gradient(140deg,#8f7bff,#57c6ff);">陆</span>
+            <div>
+              <div class="mk-comment-name">陆一鸣</div>
+              <div class="mk-comment-when">11 月 16 日</div>
+            </div>
+          </div>
+          <div class="mk-comment-stars">★★★★★</div>
+          <p class="mk-comment-text">北岭的低照度教程救了我。按他的参数拍了一条雨夜，噪点控制住了，画面也没糊。希望多做这类可直接抄作业的内容。</p>
+        </article>
+
+        <article class="mk-card mk-comment">
+          <div class="mk-comment-top">
+            <span class="mk-comment-avatar" style="background:linear-gradient(140deg,#ff7c96,#8f7bff);">苏</span>
+            <div>
+              <div class="mk-comment-name">苏小满</div>
+              <div class="mk-comment-when">11 月 14 日</div>
+            </div>
+          </div>
+          <div class="mk-comment-stars">★★★★☆</div>
+          <p class="mk-comment-text">喜欢夜里看专题页，排版清楚，更新状态一目了然。希望专题能再增加一点幕后花絮，现在有些意犹未尽。</p>
+        </article>
+
+        <article class="mk-card mk-comment">
+          <div class="mk-comment-top">
+            <span class="mk-comment-avatar" style="background:linear-gradient(140deg,#57c6ff,#6fe3c1);">何</span>
+            <div>
+              <div class="mk-comment-name">何处安</div>
+              <div class="mk-comment-when">11 月 11 日 · 连续签到 68 天</div>
+            </div>
+          </div>
+          <div class="mk-comment-stars">★★★★★</div>
+          <p class="mk-comment-text">这是我唯一每周固定打开的影像站。榜单很实在，没有刷量的感觉，新人榜里常能挖到好片子。</p>
+        </article>
+
+        <article class="mk-card mk-comment">
+          <div class="mk-comment-top">
+            <span class="mk-comment-avatar" style="background:linear-gradient(140deg,#6fe3c1,#ffb45c);">小</span>
+            <div>
+              <div class="mk-comment-name">小鹿快跑</div>
+              <div class="mk-comment-when">11 月 9 日</div>
+            </div>
+          </div>
+          <div class="mk-comment-stars">★★★★☆</div>
+          <p class="mk-comment-text">声音设计那几期让我重新理解了“沉浸感”。唯一建议：移动端播放时希望能记住上次看到的位置。</p>
+        </article>
+
+        <article class="mk-card mk-comment">
+          <div class="mk-comment-top">
+            <span class="mk-comment-avatar" style="background:linear-gradient(140deg,#8f7bff,#ffb45c);">橙</span>
+            <div>
+              <div class="mk-comment-name">橙子皮</div>
+              <div class="mk-comment-when">11 月 7 日</div>
+            </div>
+          </div>
+          <div class="mk-comment-stars">★★★★★</div>
+          <p class="mk-comment-text">《深夜食堂第五张桌子》看得我想下楼吃面。老板讲下雨天最忙那一段，特别真实，不用煽情就很有力量。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 企业动态 + 合作 + FAQ ================= -->
+  <section class="mk-section" id="mkNews" aria-labelledby="mkNewsTitle">
+    <div class="mk-wrap">
+      <span class="mk-eyebrow">企业动态 · 合作伙伴</span>
+      <h2 class="mk-h2" id="mkNewsTitle">午夜久干的<em>官方发布</em>与社区支持</h2>
+      <p class="mk-lead">品牌动态、合作信息与帮助说明集中在本节，方便媒体与合作方了解我们的近况。</p>
+
+      <div class="mk-split">
+        <ul class="mk-news">
+          <li>
+            <span class="mk-news-date">11.22</span>
+            <div>
+              <div class="mk-news-title">冬季创作挑战开放报名</div>
+              <div class="mk-news-desc">主题“夜里的第一盏灯”，面向所有创作者征集 3–10 分钟短片，优秀作品获得官方推荐与制作支持。</div>
+            </div>
+          </li>
+          <li>
+            <span class="mk-news-date">11.15</span>
+            <div>
+              <div class="mk-news-title">低照度拍摄公开文档上线</div>
+              <div class="mk-news-desc">由北岭整理，包含参数表、器材清单与常见问题，已在官方网站免费开放下载。</div>
+            </div>
+          </li>
+          <li>
+            <span class="mk-news-date">11.06</span>
+            <div>
+              <div class="mk-news-title">与三家城市影像空间达成合作</div>
+              <div class="mk-news-desc">未来将在合作空间举办小型放映与创作者对谈，报名信息会在动态区更新。</div>
+            </div>
+          </li>
+          <li>
+            <span class="mk-news-date">10.28</span>
+            <div>
+              <div class="mk-news-title">第三季度内容治理报告发布</div>
+              <div class="mk-news-desc">公布审核数据、下架原因与申诉处理结果，持续提升平台透明度与可信度。</div>
+            </div>
+          </li>
+        </ul>
+
+        <div>
+          <div class="mk-card mk-card-body">
+            <h3 class="mk-h3">合作品牌与伙伴</h3>
+            <div class="mk-partner-grid" style="margin-top:12px;">
+              <div class="mk-partner">城市影像空间</div>
+              <div class="mk-partner">南岸书店</div>
+              <div class="mk-partner">夜航咖啡</div>
+              <div class="mk-partner">拾光器材</div>
+              <div class="mk-partner">本地电影节</div>
+              <div class="mk-partner">社区文化中心</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="mkFaq" style="margin-top:38px;scroll-margin-top:var(--midnight-sticky);">
+        <h2 class="mk-h2" style="font-size:1.32rem;">帮助中心 · 常见问题</h2>
+        <div class="mk-faq-list">
+          <details open>
+            <summary>午夜久干官方网站的内容都是原创吗？</summary>
+            <p>是的。首页推荐与专题内容均由编辑部或签约创作者原创制作，部分合作内容会在页面明确标注合作方。所有成片提供高清正版版本。</p>
+          </details>
+          <details>
+            <summary>如何向午夜久干投稿？</summary>
+            <p>点击页面中的“投稿入口”，填写作品链接、简介与联系方式即可。审核周期通常为 3–5 个工作日，通过后会收到编辑部的修改建议。</p>
+          </details>
+          <details>
+            <summary>投稿对器材有要求吗？</summary>
+            <p>没有硬性要求。我们更看重选题与完成度，手机拍摄的作品同样可以入选。夜景作品建议附上现场收音说明与拍摄参数。</p>
+          </details>
+          <details>
+            <summary>冬季创作挑战如何报名？</summary>
+            <p>在公告条或企业动态中进入报名入口，提交作品标题与 100 字简介。报名成功后会在 48 小时内收到确认信息。</p>
+          </details>
+          <details>
+            <summary>可以在其他平台转载午夜久干的作品吗？</summary>
+            <p>需提前获得书面授权。非商业转载请注明作者与来源，并保留片尾署名。商业用途请通过联系邮箱沟通。</p>
+          </details>
+          <details>
+            <summary>如何举报不适当内容？</summary>
+            <p>在评论区或作品页使用举报入口，选择具体原因并提交。编辑部会在 48 小时内处理，并向举报人反馈结果。</p>
+          </details>
+        </div>
+      </div>
+
+      <div class="mk-cta" id="mkSubmit" style="scroll-margin-top:var(--midnight-sticky);">
+        <div>
+          <h3>把你的夜晚，交给午夜久干</h3>
+          <p>投稿通道全年开放，也欢迎报名冬季创作挑战。我们提供剪辑建议、声音指导与官方推荐位，让好内容被更多人看见。</p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <button class="mk-btn mk-btn-primary" data-submit-open>投稿入口</button>
+          <button class="mk-btn mk-btn-amber" data-share>分享本页</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="mk-footer">
+  <div class="mk-wrap">
+    <div class="mk-footer-grid">
+      <div>
+        <div class="mk-footer-brand">午夜久干 · 官方网站</div>
+        <p class="mk-footer-about">深夜原创视频品牌，持续运营夜间题材影像与创作者社区。所有内容均为原创或经授权发布，追求真实、专业与品质。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#mkVideo">精品内容</a></li>
+          <li><a href="#mkTopic">专题企划</a></li>
+          <li><a href="#mkRank">数据榜单</a></li>
+          <li><a href="#mkComments">用户口碑</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="#mkSubmit">投稿与报名</a></li>
+          <li><a href="#mkAuthors">创作者矩阵</a></li>
+          <li><a href="#mkFaq">帮助中心</a></li>
+          <li><a href="#mkNews">企业动态</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#mkAnalysis">品牌解析</a></li>
+          <li><a href="#mkNews">合作伙伴</a></li>
+          <li><a href="#mkTop">返回顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mk-footer-bottom">
+      <span><b>午夜久干官方网站</b> · 版权所有 © 2026 · 持续运营中</span>
+      <span>内容均为原创或授权发布 · 高清正版 · 用户至上</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mk-modal" id="mkModal" role="dialog" aria-modal="true" aria-labelledby="mkModalTitle">
+  <div class="mk-modal-panel">
+    <button class="mk-modal-close" id="mkModalClose" aria-label="关闭窗口">×</button>
+    <h3 class="mk-modal-title" id="mkModalTitle">窗口</h3>
+    <div id="mkModalBody"></div>
+  </div>
+</div>
+
+<div class="mk-toast" id="mkToast" role="status" aria-live="polite"></div>
+<button class="mk-top-btn" id="mkTopBtn" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+  var toastEl = document.getElementById('mkToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('mkBurger');
+  var mobileNav = document.getElementById('mkMobileNav');
+  burger.addEventListener('click', function(){
+    var open = mobileNav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.textContent = open ? '×' : '☰';
+  });
+  mobileNav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      mobileNav.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+      burger.textContent = '☰';
+    }
+  });
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('mkSearchInput');
+  var searchBtn = document.getElementById('mkSearchBtn');
+  var searchResult = document.getElementById('mkSearchResult');
+  var searchIndex = ['凌晨三点的街灯','夜班公交','低照度拍摄','深夜食堂','收音师','城市探索','人物访谈','新手投稿','冬季创作挑战','阿砚','北岭','陈麦'];
+  function runSearch(){
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      searchResult.textContent = '请输入关键词';
+      return;
+    }
+    var hits = searchIndex.filter(function(k){ return k.indexOf(q) > -1; });
+    if(hits.length){
+      searchResult.textContent = '找到 ' + hits.length + ' 项：' + hits.slice(0,3).join(' / ');
+      toast('已筛选与“' + q + '”相关的内容');
+    }else{
+      searchResult.textContent = '暂无匹配，试试“街灯”“拍摄”或作者名';
+    }
+  }
+  searchBtn.addEventListener('click', runSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+  });
+
+  /* 点赞与收藏 */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-like]');
+    if(likeBtn){
+      var numEl = likeBtn.querySelector('[data-like-num]');
+      var n = parseInt(numEl.textContent.replace(/,/g,''),10) || 0;
+      var on = likeBtn.classList.toggle('liked');
+      numEl.textContent = (on ? n + 1 : Math.max(0, n - 1)).toLocaleString('en-US');
+      toast(on ? '已点赞，感谢支持原创' : '已取消点赞');
+      return;
+    }
+    var favBtn = e.target.closest('[data-favorite]');
+    if(favBtn){
+      var active = favBtn.classList.toggle('on');
+      favBtn.textContent = active ? '★ 已收藏' : '☆ 收藏';
+      toast(active ? '已加入收藏夹' : '已取消收藏');
+      return;
+    }
+    var shareBtn = e.target.closest('[data-share]');
+    if(shareBtn){
+      var link = 'https://midnight-jiugan.example/official';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){ toast('链接已复制，欢迎分享'); }, function(){ toast('复制失败，请手动分享'); });
+      }else{
+        toast('链接已生成：' + link);
+      }
+      return;
+    }
+    var authorBtn = e.target.closest('[data-author]');
+    if(authorBtn){
+      var name = authorBtn.getAttribute('data-author');
+      var authorMap = {
+        '阿砚':'夜间纪实导演，负责“凌晨三点的街灯”专题，坚持现场收音与长镜头叙事。',
+        '陈麦':'美食人文作者，擅长以访谈方式记录深夜饮食与人物故事。',
+        '北岭':'低照度摄影与器材教学作者，主张先拍清楚再谈风格。',
+        '小满':'城市观察作者，关注深夜消费与情绪之间的关系。',
+        '周不晚':'声音设计师，负责多部作品的环境声采集与混音。',
+        '禾一':'独立影像创作者，作品介于纪录与实验之间。'
+      };
+      openModal('创作者简介 · ' + name, '<p style="font-size:.9rem;color:var(--midnight-ink-soft);">' + (authorMap[name] || '') + '</p><p class="mk-muted" style="margin-top:10px;">可通过作品页查看更多内容与创作笔记。</p>');
+      return;
+    }
+    var commentBtn = e.target.closest('[data-comment-open]');
+    if(commentBtn){
+      openModal('评论 · 凌晨三点的街灯', '<div class="mk-field"><label>写下你的观看感受</label><textarea id="mkCommentText" rows="4" placeholder="例如：这一集的环境声处理很克制……"></textarea></div><button class="mk-btn mk-btn-primary" id="mkCommentSend" style="margin-top:12px;">发布评论</button>');
+      return;
+    }
+    var submitBtn = e.target.closest('[data-submit-open]');
+    if(submitBtn){
+      openModal('投稿入口 · 午夜久干', '<p class="mk-muted" style="margin:0 0 6px;">填写作品信息，编辑部将在 3–5 个工作日内回复。</p><div class="mk-field"><label>作品标题</label><input type="text" id="mkSubmitTitle" placeholder="例如：雨夜里的最后一班车"></div><div class="mk-field"><label>作品链接或简介</label><textarea id="mkSubmitDesc" rows="3" placeholder="附上链接，或用 100 字说明内容"></textarea></div><div class="mk-field"><label>联系方式</label><input type="text" id="mkSubmitContact" placeholder="邮箱或其他联系方式"></div><button class="mk-btn mk-btn-primary" id="mkSubmitSend" style="margin-top:14px;">提交投稿</button>');
+      return;
+    }
+  });
+
+  /* 弹窗 */
+  var modal = document.getElementById('mkModal');
+  var modalTitle = document.getElementById('mkModalTitle');
+  var modalBody = document.getElementById('mkModalBody');
+  function openModal(title, html){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('mkModalClose').addEventListener('click', closeModal);
+  modal.addEventListener('click', function(e){
+    if(e.target === modal) closeModal();
+    if(e.target.id === 'mkCommentSend'){
+      var val = (document.getElementById('mkCommentText').value || '').trim();
+      if(!val){ toast('请先写下评论内容'); return; }
+      closeModal();
+      toast('评论已提交，审核通过后展示');
+    }
+    if(e.target.id === 'mkSubmitSend'){
+      var t = (document.getElementById('mkSubmitTitle').value || '').trim();
+      if(!t){ toast('请填写作品标题'); return; }
+      closeModal();
+      toast('投稿已提交，感谢参与午夜久干');
+    }
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeModal();
+  });
+
+  /* 榜单切换 */
+  var rankData = {
+    hot: [
+      ['凌晨三点的街灯 EP04','18′42″ · 阿砚','8.4 万'],
+      ['夜班公交第 17 站','12′06″ · 阿砚','3.2 万'],
+      ['深夜食堂的第五张桌子','15′20″ · 陈麦','2.8 万'],
+      ['用一支手持镜头拍完一夜雨','9′38″ · 北岭','2.1 万'],
+      ['便利店关东煮的 12 种情绪','6′12″ · 小满','1.7 万']
+    ],
+    new: [
+      ['雨夜里的最后一班车','4′50″ · 禾一','新人'],
+      ['我拍下楼下的夜宵摊','5′30″ · 阿桐','新人'],
+      ['凌晨四点的药房窗口','7′02″ · 小鹿','新人'],
+      ['一台旧相机的一夜','3′46″ · 陆一鸣','新人'],
+      ['天桥下的回声测试','6′24″ · 何处安','新人']
+    ],
+    praise: [
+      ['深夜来信：一位夜班护士','8′12″ · 编辑部','好评 98%'],
+      ['低照度拍摄的 7 个误区','11′05″ · 北岭','好评 97%'],
+      ['城市底噪的收音方案','10′28″ · 周不晚','好评 96%'],
+      ['面馆老板的雨夜','14′40″ · 陈麦','好评 95%'],
+      ['高架下修车摊的老人','13′18″ · 阿砚','好评 95%']
+    ]
+  };
+  var rankList = document.getElementById('mkRankList');
+  function renderRank(key){
+    var rows = rankData[key] || rankData.hot;
+    rankList.innerHTML = rows.map(function(r, i){
+      return '<li><span class="mk-rank-no">' + (i + 1 < 10 ? '0' : '') + (i + 1) + '</span><span><span class="mk-rank-name">' + r[0] + '</span><br><span class="mk-rank-sub">' + r[1] + '</span></span><span class="mk-rank-val">' + r[2] + '</span></li>';
+    }).join('');
+  }
+  document.querySelectorAll('[data-rank-tab]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('[data-rank-tab]').forEach(function(b){
+        b.classList.remove('active');
+        b.setAttribute('aria-selected','false');
+      });
+      btn.classList.add('active');
+      btn.setAttribute('aria-selected','true');
+      renderRank(btn.getAttribute('data-rank-tab'));
+    });
+  });
+  renderRank('hot');
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('mkTopBtn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 620) topBtn.classList.add('show'); else topBtn.classList.remove('show');
+  });
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  /* 数字滚动 */
+  var counters = document.querySelectorAll('[data-count]');
+  function animateCount(el){
+    var target = parseInt(el.getAttribute('data-count'),10) || 0;
+    var suffix = el.querySelector('span') ? el.querySelector('span').outerHTML : '';
+    var start = null;
+    function step(ts){
+      if(!start) start = ts;
+      var p = Math.min((ts - start) / 1200, 1);
+      var val = Math.floor(target * (1 - Math.pow(1 - p, 3)));
+      el.innerHTML = val.toLocaleString('en-US') + suffix;
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          animateCount(en.target);
+          io.unobserve(en.target);
+        }
+      });
+    }, { threshold: .6 });
+    counters.forEach(function(c){ io.observe(c); });
+  }else{
+    counters.forEach(animateCount);
+  }
+
+  /* 锚点平滑与吸顶偏移由 CSS scroll-margin 保证 */
+})();
+</script>
+</body>
+  </html>
